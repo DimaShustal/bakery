@@ -1,0 +1,386 @@
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 40px;
+    height: 100%;
+}
+
+
+/* header */
+.header {
+    line-height: 1em;
+    text-transform: uppercase;
+    font-size: 12px;
+    background: rgba(0,0,0,.7);
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    z-index: 20;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.header__links {
+    display: flex;
+    align-items: center;
+}
+
+.header__links > * {
+    margin-right: 5px;
+}
+
+.header__links > *:last-child {
+    margin-right: 0;
+}
+
+.header__links__item {
+    padding: 5px 10px;
+    border: 2px solid transparent;
+}
+
+.header__links__item.--active {
+    border: 2px solid #fff;
+}
+
+.header__links__social {
+    display: flex;
+}
+
+.header__links__social__link {
+    width: 17px;
+    height: 17px;
+    margin-left: 10px;
+}
+
+.header__links__social__link img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* banner */
+.banner {
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner.--index { background-image: url("../img/main_banner.jpg"); }
+.banner.--menu { background-image: url("../img/product_banner.jpg"); }
+
+.banner__text {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px rgba(0,0,0,.5);
+}
+
+/* about */
+.about__wrap {
+    margin: 50px auto;
+    max-width: 50%;
+    text-align: center;
+    font-weight: 300;
+    color: #000;
+}
+
+
+/* advantages */
+.advantages {
+    background: #222;
+    color: #e6e6e6;
+    padding: 50px 0;
+}
+
+.advantages__title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.advantages__list {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.advantages__list__item {
+    flex: 1 1 25%;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.advantages__list__item__count {
+    font-size: 30px;
+    letter-spacing: -2px;
+    line-height: 1em;
+    margin-bottom: 10px;
+}
+
+.advantages__list__item__title {
+    margin-bottom: 10px;
+}
+
+.advantages__list__item__text {
+    font-size: 12px;
+    opacity: .8;
+}
+
+/* menu-section */
+.menu-section {
+    margin: 50px 0;
+}
+
+.menu-section__list {
+    display: flex;
+    justify-content: center;
+    margin: 0 -10px;
+}
+
+.menu-section__list__item {
+    margin: 0 10px;
+    width: 33.33%;
+    max-width: 200px;
+    max-height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-section__list__item.--active .menu-section__list__item__name,
+.menu-section__list__item.--active .menu-section__list__item__shadow,
+.menu-section__list__item:hover .menu-section__list__item__name,
+.menu-section__list__item:hover .menu-section__list__item__shadow {
+    display: none;
+}
+
+.menu-section__list__item img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-section__list__item__shadow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 10;
+}
+
+.menu-section__list__item__name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    font-weight: 300;
+}
+
+
+/* footer */
+footer {
+    color: #e6e6e6;
+    padding: 40px 0;
+    font-size: 12px;
+    background-image: url('../img/footer.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*.footer__shadow {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*bottom: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*z-index: 5;*/
+    /*background: rgba(0,0,0,.6);*/
+/*}*/
+
+.footer__wrap {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+
+.footer__logo {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer__email,
+.footer__phone {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.footer__email > div:first-child,
+.footer__phone > div:first-child {
+    margin-right: 5px;
+}
+
+.footer__social {
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.footer__social__link {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.footer__social__link + .footer__social__link {
+    margin-left: 10px;
+}
+
+.footer__social__link img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer__rights {
+    padding-top: 20px;
+    border-top: 1px solid rgba(230, 230, 230, .4);
+}
+
+
+
+/* menu */
+.menu-list-example {
+    height: .1px;
+    opacity: 0;
+    position: fixed;
+    bottom: -100px;
+}
+
+.menu {
+    color: #000;
+}
+
+.menu__list {
+    margin: -15px -15px 40px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: none;
+}
+
+body.--bread .menu__list.--bread,
+body.--pie .menu__list.--pie,
+body.--baking .menu__list.--baking {
+    display: flex;
+}
+
+.menu__list__item {
+    width: 33.33%;
+    min-width: 300px;
+    max-width: 350px;
+    padding: 15px;
+}
+
+.menu__list__item__img {
+    width: 100%;
+    height: 220px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu__list__item__img.bread-1 { background-image: url('../img/bread_1.jpeg'); }
+.menu__list__item__img.bread-2 { background-image: url('../img/bread_2.jpeg'); }
+.menu__list__item__img.bread-3 { background-image: url('../img/bread_3.jpeg'); }
+.menu__list__item__img.bread-4 { background-image: url('../img/bread_4.jpeg'); }
+.menu__list__item__img.bread-5 { background-image: url('../img/bread_5.jpeg'); }
+.menu__list__item__img.bread-6 { background-image: url('../img/bread_6.jpeg'); }
+.menu__list__item__img.bread-7 { background-image: url('../img/bread_7.jpeg'); }
+.menu__list__item__img.bread-8 { background-image: url('../img/bread_8.jpeg'); }
+.menu__list__item__img.bread-9 { background-image: url('../img/bread_9.png'); }
+.menu__list__item__img.bread-10 { background-image: url('../img/bread_10.jpeg'); }
+.menu__list__item__img.bread-11 { background-image: url('../img/bread_11.jpeg'); }
+.menu__list__item__img.bread-12 { background-image: url('../img/bread_12.jpeg'); }
+.menu__list__item__img.bread-13 { background-image: url('../img/bread_13.jpeg'); }
+.menu__list__item__img.bread-14 { background-image: url('../img/bread_14.jpeg'); }
+.menu__list__item__img.bread-15 { background-image: url('../img/bread_15.jpeg'); }
+.menu__list__item__img.bread-16 { background-image: url('../img/bread_16.jpg'); }
+.menu__list__item__img.bread-17 { background-image: url('../img/bread_17.jpeg'); }
+.menu__list__item__img.bread-18 { background-image: url('../img/bread_18.jpeg'); }
+.menu__list__item__img.bread-19 { background-image: url('../img/bread_19.jpeg'); }
+.menu__list__item__img.bread-20 { background-image: url('../img/bread_20.jpeg'); }
+.menu__list__item__img.bread-21 { background-image: url('../img/bread_21.jpeg'); }
+.menu__list__item__img.bread-22 { background-image: url('../img/bread_22.jpeg'); }
+.menu__list__item__img.bread-23 { background-image: url('../img/bread_23.jpeg'); }
+.menu__list__item__img.bread-24 { background-image: url('../img/bread_24.jpg'); }
+
+.menu__list__item__img.bakery-1 { background-image: url('../img/bakery_1.jpeg'); }
+.menu__list__item__img.bakery-2 { background-image: url('../img/bakery_2.jpeg'); }
+.menu__list__item__img.bakery-3 { background-image: url('../img/bakery_3.jpeg'); }
+.menu__list__item__img.bakery-4 { background-image: url('../img/bakery_4.jpeg'); }
+.menu__list__item__img.bakery-5 { background-image: url('../img/bakery_5.jpeg'); }
+.menu__list__item__img.bakery-6 { background-image: url('../img/bakery_6.jpeg'); }
+.menu__list__item__img.bakery-7 { background-image: url('../img/bakery_7.jpeg'); }
+.menu__list__item__img.bakery-8 { background-image: url('../img/bakery_8.jpeg'); }
+.menu__list__item__img.bakery-9 { background-image: url('../img/bakery_9.jpeg'); }
+.menu__list__item__img.bakery-10 { background-image: url('../img/bakery_10.jpeg'); }
+.menu__list__item__img.bakery-11 { background-image: url('../img/bakery_11.jpeg'); }
+.menu__list__item__img.bakery-12 { background-image: url('../img/bakery_12.jpeg'); }
+
+.menu__list__item__img.pie-1 { background-image: url('../img/pie_1.jpeg'); }
+.menu__list__item__img.pie-2 { background-image: url('../img/pie_2.jpeg'); }
+.menu__list__item__img.pie-3 { background-image: url('../img/pie_3.jpeg'); }
+.menu__list__item__img.pie-4 { background-image: url('../img/pie_4.jpeg'); }
+.menu__list__item__img.pie-5 { background-image: url('../img/pie_5.jpeg'); }
+.menu__list__item__img.pie-6 { background-image: url('../img/pie_6.jpeg'); }
+
+.menu__list__item__name {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+}
+
+.menu__list__item__description {
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.menu__list__item__weight > span:first-child,
+.menu__list__item__composition > span:first-child {
+    font-weight: 600;
+    font-size: 15px;
+    opacity: .7;
+    /*text-decoration: underline;*/
+}
+
+.menu__list__item__weight__value,
+.menu__list__item__composition__value {
+    font-weight: 300;
+    font-size: 15px;
+}

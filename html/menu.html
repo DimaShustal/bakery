@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Название | Продукция</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
+    <script src="../js/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__item">
+                    <a href="/index.html">
+                        LOGO
+                    </a>
+                </div>
+                <div class="header__links">
+                    <a href="/index.html" class="header__links__item">Главная</a>
+                    <a href="/menu.html" class="header__links__item --active">Выпечка</a>
+                    <a href="#contacts" class="header__links__item">Контакты</a>
+                    <!--<a href="/index.html#about" class="header__links__item">О нас</a>-->
+                    <div class="header__links__social">
+                        <a href="https://www.facebook.com/groups/1239655082759464/" target="_blank" class="header__links__social__link">
+                            <img src="../img/facebook.png" alt="facebook">
+                        </a>
+                        <a href="https://www.instagram.com/chestnyikhleb/" target="_blank" class="header__links__social__link">
+                            <img src="../img/instagram.png" alt="instagram">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner --menu">
+        <div class="banner__text"> Наша Продукция</div>
+    </section>
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-section__list">
+                <a href="/menu.html?product=bread" data-product="bread" class="menu-section__list__item --active">
+                    <span class="menu-section__list__item__shadow"></span>
+                    <img src="../img/bread.jpg" alt="bread">
+                    <span class="menu-section__list__item__name">ХЛЕБ</span>
+                </a>
+                <a href="/menu.html?product=baking" data-product="baking" class="menu-section__list__item">
+                    <span class="menu-section__list__item__shadow"></span>
+                    <img src="../img/baking.jpg" alt="baking">
+                    <span class="menu-section__list__item__name">ВЫПЕЧКА</span>
+                </a>
+                <a href="/menu.html?product=pie" data-product="pie" class="menu-section__list__item">
+                    <span class="menu-section__list__item__shadow"></span>
+                    <img src="../img/pie.jpg" alt="pie">
+                    <span class="menu-section__list__item__name">ПИРОГИ</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="menu">
+                <ul class="menu-list-example">
+                    <li class="menu__list__item">
+                        <!--<img class="menu__list__item__img" />-->
+                        <div class="menu__list__item__img"></div>
+                        <div class="menu__list__item__name"></div>
+                        <div class="menu__list__item__description"></div>
+                        <div class="menu__list__item__composition">
+                            <span>Состав:</span>
+                            <span class="menu__list__item__composition__value"></span>
+                        </div>
+                        <div class="menu__list__item__weight">
+                            <span>Вес:</span>
+                            <span class="menu__list__item__weight__value"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacts">
+        <!--&lt;!&ndash; remove footer__shadow &ndash;&gt;-->
+        <!--<div class="footer__shadow"></div>-->
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__logo">
+                    LOGO
+                </div>
+                <div class="footer__phone">
+                    <div>Телефон:</div>
+                    <div>+375 (29) 130 01 58</div>
+                </div>
+                <div class="footer__email">
+                    <div>Почта:</div>
+                    <div>artfoodservice@mail.ru</div>
+                </div>
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/groups/1239655082759464/" target="_blank" class="footer__social__link">
+                        <img src="../img/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/chestnyikhleb/" target="_blank" class="footer__social__link">
+                        <img src="../img/instagram.png" alt="instagram">
+                    </a>
+                </div>
+                <div class="footer__rights">
+                    © 2018 Shoptagr Ltd. All Rights Reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
