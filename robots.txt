@@ -1,3 +1,5 @@
 User-Agent: *
 Disallow:
-Disallow: /
+
+Host: www.site.by
+Sitemap: https://www.site.by/sitemap.xml
