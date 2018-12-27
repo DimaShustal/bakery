@@ -1,14 +1,6 @@
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const path = require('path');
-
-const ImageminPlugin = require("imagemin-webpack");
-const imageminJpegtran = require("imagemin-jpegtran");
-const imageminOptipng = require("imagemin-optipng");
-
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -24,6 +16,12 @@ module.exports = {
 
   module: {
     rules: [
+      {
+        test: /\.(html)$/,
+        use: {
+          loader: 'html-loader'
+        }
+      },
       {
         test: /\.(js|jsx)$/,
         loader: 'babel-loader'
