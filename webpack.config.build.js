@@ -9,6 +9,7 @@ const imageminOptipng = require("imagemin-optipng");
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -108,6 +109,10 @@ module.exports = {
         'javascript',
         'stylesheets'
       ]
-    })
+    }),
+    new CopyWebpackPlugin([
+      { from: 'robots.txt', to: '' },
+      { from: 'sitemap.xml', to: '' }
+    ], {})
   ]
 }
