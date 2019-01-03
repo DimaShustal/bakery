@@ -1,5 +1,5 @@
 User-Agent: *
 Disallow:
 
-Host: www.site.by
-Sitemap: https://www.site.by/sitemap.xml
+Host: chestni-hleb.by
+Sitemap: http://chestni-hleb.by/sitemap.xml

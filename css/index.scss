@@ -7,6 +7,7 @@ body {
     font-weight: 400;
     color: #fff;
     font-size: 16px;
+    min-width: 320px;
 }
 
 a {
@@ -22,6 +23,7 @@ a {
 
 /* header */
 .header {
+    min-width: 320px;
     line-height: 1em;
     text-transform: uppercase;
     font-size: 12px;
@@ -213,16 +215,6 @@ footer {
     position: relative;
 }
 
-/*.footer__shadow {*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*right: 0;*/
-    /*z-index: 5;*/
-    /*background: rgba(0,0,0,.6);*/
-/*}*/
-
 .footer__wrap {
     position: relative;
     z-index: 10;
@@ -234,6 +226,7 @@ footer {
     margin-bottom: 20px;
 }
 
+.footer__location,
 .footer__email,
 .footer__phone {
     display: flex;
@@ -313,52 +306,52 @@ body.--baking .menu__list.--baking {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    &.bread-1 { background-image: url('../img/bread_1.jpeg'); }
+    &.bread-2 { background-image: url('../img/bread_2.jpeg'); }
+    &.bread-3 { background-image: url('../img/bread_3.jpeg'); }
+    &.bread-4 { background-image: url('../img/bread_4.jpeg'); }
+    &.bread-5 { background-image: url('../img/bread_5.jpeg'); }
+    &.bread-6 { background-image: url('../img/bread_6.jpeg'); }
+    &.bread-7 { background-image: url('../img/bread_7.jpeg'); }
+    &.bread-8 { background-image: url('../img/bread_8.jpeg'); }
+    &.bread-9 { background-image: url('../img/bread_9.png'); }
+    &.bread-10 { background-image: url('../img/bread_10.jpeg'); }
+    &.bread-11 { background-image: url('../img/bread_11.jpeg'); }
+    &.bread-12 { background-image: url('../img/bread_12.jpeg'); }
+    &.bread-13 { background-image: url('../img/bread_13.jpeg'); }
+    &.bread-14 { background-image: url('../img/bread_14.jpeg'); }
+    &.bread-15 { background-image: url('../img/bread_15.jpeg'); }
+    &.bread-16 { background-image: url('../img/bread_16.jpg'); }
+    &.bread-17 { background-image: url('../img/bread_17.jpeg'); }
+    &.bread-18 { background-image: url('../img/bread_18.jpeg'); }
+    &.bread-19 { background-image: url('../img/bread_19.jpeg'); }
+    &.bread-20 { background-image: url('../img/bread_20.jpeg'); }
+    &.bread-21 { background-image: url('../img/bread_21.jpeg'); }
+    &.bread-22 { background-image: url('../img/bread_22.jpeg'); }
+    &.bread-23 { background-image: url('../img/bread_23.jpeg'); }
+    &.bread-24 { background-image: url('../img/bread_24.jpg'); }
+
+    &.bakery-1 { background-image: url('../img/bakery_1.jpeg'); }
+    &.bakery-2 { background-image: url('../img/bakery_2.jpeg'); }
+    &.bakery-3 { background-image: url('../img/bakery_3.jpeg'); }
+    &.bakery-4 { background-image: url('../img/bakery_4.jpeg'); }
+    &.bakery-5 { background-image: url('../img/bakery_5.jpeg'); }
+    &.bakery-6 { background-image: url('../img/bakery_6.jpeg'); }
+    &.bakery-7 { background-image: url('../img/bakery_7.jpeg'); }
+    &.bakery-8 { background-image: url('../img/bakery_8.jpeg'); }
+    &.bakery-9 { background-image: url('../img/bakery_9.jpeg'); }
+    &.bakery-10 { background-image: url('../img/bakery_10.jpeg'); }
+    &.bakery-11 { background-image: url('../img/bakery_11.jpeg'); }
+    &.bakery-12 { background-image: url('../img/bakery_12.jpeg'); }
+
+    &.pie-1 { background-image: url('../img/pie_1.jpeg'); }
+    &.pie-2 { background-image: url('../img/pie_2.jpeg'); }
+    &.pie-3 { background-image: url('../img/pie_3.jpeg'); }
+    &.pie-4 { background-image: url('../img/pie_4.jpeg'); }
+    &.pie-5 { background-image: url('../img/pie_5.jpeg'); }
+    &.pie-6 { background-image: url('../img/pie_6.jpeg'); }
 }
-
-.menu__list__item__img.bread-1 { background-image: url('../img/bread_1.jpeg'); }
-.menu__list__item__img.bread-2 { background-image: url('../img/bread_2.jpeg'); }
-.menu__list__item__img.bread-3 { background-image: url('../img/bread_3.jpeg'); }
-.menu__list__item__img.bread-4 { background-image: url('../img/bread_4.jpeg'); }
-.menu__list__item__img.bread-5 { background-image: url('../img/bread_5.jpeg'); }
-.menu__list__item__img.bread-6 { background-image: url('../img/bread_6.jpeg'); }
-.menu__list__item__img.bread-7 { background-image: url('../img/bread_7.jpeg'); }
-.menu__list__item__img.bread-8 { background-image: url('../img/bread_8.jpeg'); }
-.menu__list__item__img.bread-9 { background-image: url('../img/bread_9.png'); }
-.menu__list__item__img.bread-10 { background-image: url('../img/bread_10.jpeg'); }
-.menu__list__item__img.bread-11 { background-image: url('../img/bread_11.jpeg'); }
-.menu__list__item__img.bread-12 { background-image: url('../img/bread_12.jpeg'); }
-.menu__list__item__img.bread-13 { background-image: url('../img/bread_13.jpeg'); }
-.menu__list__item__img.bread-14 { background-image: url('../img/bread_14.jpeg'); }
-.menu__list__item__img.bread-15 { background-image: url('../img/bread_15.jpeg'); }
-.menu__list__item__img.bread-16 { background-image: url('../img/bread_16.jpg'); }
-.menu__list__item__img.bread-17 { background-image: url('../img/bread_17.jpeg'); }
-.menu__list__item__img.bread-18 { background-image: url('../img/bread_18.jpeg'); }
-.menu__list__item__img.bread-19 { background-image: url('../img/bread_19.jpeg'); }
-.menu__list__item__img.bread-20 { background-image: url('../img/bread_20.jpeg'); }
-.menu__list__item__img.bread-21 { background-image: url('../img/bread_21.jpeg'); }
-.menu__list__item__img.bread-22 { background-image: url('../img/bread_22.jpeg'); }
-.menu__list__item__img.bread-23 { background-image: url('../img/bread_23.jpeg'); }
-.menu__list__item__img.bread-24 { background-image: url('../img/bread_24.jpg'); }
-
-.menu__list__item__img.bakery-1 { background-image: url('../img/bakery_1.jpeg'); }
-.menu__list__item__img.bakery-2 { background-image: url('../img/bakery_2.jpeg'); }
-.menu__list__item__img.bakery-3 { background-image: url('../img/bakery_3.jpeg'); }
-.menu__list__item__img.bakery-4 { background-image: url('../img/bakery_4.jpeg'); }
-.menu__list__item__img.bakery-5 { background-image: url('../img/bakery_5.jpeg'); }
-.menu__list__item__img.bakery-6 { background-image: url('../img/bakery_6.jpeg'); }
-.menu__list__item__img.bakery-7 { background-image: url('../img/bakery_7.jpeg'); }
-.menu__list__item__img.bakery-8 { background-image: url('../img/bakery_8.jpeg'); }
-.menu__list__item__img.bakery-9 { background-image: url('../img/bakery_9.jpeg'); }
-.menu__list__item__img.bakery-10 { background-image: url('../img/bakery_10.jpeg'); }
-.menu__list__item__img.bakery-11 { background-image: url('../img/bakery_11.jpeg'); }
-.menu__list__item__img.bakery-12 { background-image: url('../img/bakery_12.jpeg'); }
-
-.menu__list__item__img.pie-1 { background-image: url('../img/pie_1.jpeg'); }
-.menu__list__item__img.pie-2 { background-image: url('../img/pie_2.jpeg'); }
-.menu__list__item__img.pie-3 { background-image: url('../img/pie_3.jpeg'); }
-.menu__list__item__img.pie-4 { background-image: url('../img/pie_4.jpeg'); }
-.menu__list__item__img.pie-5 { background-image: url('../img/pie_5.jpeg'); }
-.menu__list__item__img.pie-6 { background-image: url('../img/pie_6.jpeg'); }
 
 .menu__list__item__name {
     font-size: 18px;
@@ -376,11 +369,75 @@ body.--baking .menu__list.--baking {
     font-weight: 600;
     font-size: 15px;
     opacity: .7;
-    /*text-decoration: underline;*/
 }
 
 .menu__list__item__weight__value,
 .menu__list__item__composition__value {
     font-weight: 300;
     font-size: 15px;
+}
+
+
+@media (max-width: 768px) {
+    .about__wrap {
+        max-width: 90%;
+        margin: 30px auto;
+        font-size: 14px;
+    }
+
+    .advantages {
+        padding: 30px 0;
+
+        &__title {
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+
+        &__list {
+            flex-direction: column;
+            margin: 0;
+
+            &__item {
+                padding: 0;
+            }
+
+            &__item + &__item {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .menu-section {
+        margin: 30px 0;
+    }
+}
+
+
+@media (max-width: 544px) {
+    .container {
+        margin: 0 10px;
+    }
+
+    .hidden-xs-down {
+        display: none !important;
+    }
+
+    .header__links__item[href="#contacts"] {
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .banner {
+        height: 400px;
+
+        &__text {
+            font-size: 30px;
+        }
+    }
+
+    body.--bread .menu__list.--bread,
+    body.--pie .menu__list.--pie,
+    body.--baking .menu__list.--baking {
+        margin-bottom: 0;
+    }
 }
