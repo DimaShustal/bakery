@@ -174,6 +174,13 @@ const menuSections = {
       description: '',
       weight: '370 г.',
       composition: 'мука пш. в/с, вода, морская соль, сушеный лук.'
+    },
+    {
+      imgClass: 'bread-26',
+      name: 'Амарантовый хлеб',
+      description: '',
+      weight: '260 г.',
+      composition: 'мука амарантовая, мука пш. 1 сорт, соль морская, вода.'
     }
   ],
   pie: [
