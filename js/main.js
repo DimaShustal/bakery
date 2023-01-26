@@ -449,6 +449,23 @@ const menuSections = {
       composition: 'мука пш. 1 с., хлопья овсяные, куриное яйцо, сахар, морковь, масло подсолнеч.'
     }
   ],
+  catering: [
+    {
+      imgClass: 'bakery-1',
+    },
+    {
+      imgClass: 'bakery-2',
+    },
+    {
+      imgClass: 'bakery-6',
+    },
+    {
+      imgClass: 'bakery-4',
+    },
+    {
+      imgClass: 'bakery-5',
+    },
+  ]
 }
 
 function showItem(e) {
@@ -472,7 +489,7 @@ function showItem(e) {
 }
 
 function initItems() {
-  let i, k, parent, child, name, menuSectionsItem, menuSectionsNames;
+  let i, k, parent, child, name, menuSectionsItem, menuSectionsNames, product;
   menuSectionsNames = Object.keys(menuSections);
 
   for (i = 0; i < menuSectionsNames.length; i += 1) {
@@ -483,11 +500,18 @@ function initItems() {
     parent.className = "menu__list --" + name;
 
     for (k = 0; k < menuSectionsItem.length; k += 1) {
+      product = menuSectionsItem[k];
       child = document.querySelector('.menu__list__item').cloneNode(true);
-      child.querySelector('.menu__list__item__img').classList.add(menuSectionsItem[k].imgClass);
-      child.querySelector('.menu__list__item__name').innerHTML = menuSectionsItem[k].name;
-      child.querySelector('.menu__list__item__composition__value').innerHTML = menuSectionsItem[k].composition;
-      child.querySelector('.menu__list__item__weight__value').innerHTML = menuSectionsItem[k].weight;
+      child.querySelector('.menu__list__item__img').classList.add(product.imgClass);
+
+      child.querySelector('.menu__list__item__name').innerHTML = product.name || '';
+      if (!product.name) child.querySelector('.menu__list__item__name').classList.add('--hide');
+
+      child.querySelector('.menu__list__item__composition__value').innerHTML = product.composition || '';
+      if (!product.composition) child.querySelector('.menu__list__item__composition').classList.add('--hide');
+
+      child.querySelector('.menu__list__item__weight__value').innerHTML = product.weight || '';
+      if (!product.weight) child.querySelector('.menu__list__item__weight').classList.add('--hide');
 
       parent.appendChild(child);
     }
