@@ -46,6 +46,16 @@ a {
     height: 100%;
 }
 
+.header__logo {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 25px;
+    line-height: initial;
+    display: block;
+    margin-top: 4px;
+}
+
 .header__links {
     display: flex;
     align-items: center;
@@ -98,9 +108,9 @@ a {
 .banner.--menu { background-image: url("../img/product_banner.jpg"); }
 
 .banner__text {
-    font-size: 40px;
+    font-size: 80px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 1px;
     font-weight: 700;
     text-shadow: 1px 1px 5px rgba(0,0,0,.5);
 }
@@ -243,7 +253,11 @@ footer {
 }
 
 .footer__logo {
-    font-size: 16px;
+    font-size: 25px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: initial;
     margin-bottom: 20px;
 }
 
