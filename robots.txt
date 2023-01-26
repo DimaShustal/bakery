@@ -1,5 +1,5 @@
 User-Agent: *
 Disallow:
 
-Host: chestni-hleb.by
-Sitemap: http://chestni-hleb.by/sitemap.xml
+Host: artfoodservice.by
+Sitemap: https://artfoodservice.by/sitemap.xml

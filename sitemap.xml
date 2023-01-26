@@ -3,23 +3,28 @@
     created with Free Online Sitemap Generator www.xml-sitemaps.com
    -->
     <url>
-        <loc>http://chestni-hleb.by/</loc>
-        <lastmod>2018-12-31T10:28:28+00:00</lastmod>
+        <loc>https://artfoodservice.by/</loc>
+        <lastmod>2023-01-26T10:00:00+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>http://chestni-hleb.by/menu.html?product=bread</loc>
-        <lastmod>2018-12-31T10:28:28+00:00</lastmod>
+        <loc>https://artfoodservice.by/menu.html?product=bread</loc>
+        <lastmod>2023-01-26T10:00:00+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://chestni-hleb.by/menu.html?product=baking</loc>
-        <lastmod>2018-12-31T10:28:28+00:00</lastmod>
+        <loc>https://artfoodservice.by/menu.html?product=baking</loc>
+        <lastmod>2023-01-26T10:00:00+00:00</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>http://chestni-hleb.by/menu.html?product=pie</loc>
-        <lastmod>2018-12-31T10:28:28+00:00</lastmod>
+        <loc>https://artfoodservice.by/menu.html?product=pie</loc>
+        <lastmod>2023-01-26T10:00:00+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://artfoodservice.by/menu.html?product=catering</loc>
+        <lastmod>2023-01-26T10:00:00+00:00</lastmod>
         <priority>0.80</priority>
     </url>
 </urlset>
