@@ -112,7 +112,8 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: 'robots.txt', to: '' },
-      { from: 'sitemap.xml', to: '' }
+      { from: 'sitemap.xml', to: '' },
+      { from: 'static', to: 'static' },
     ], {})
   ]
 }
