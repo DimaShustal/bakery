@@ -36,7 +36,7 @@ a {
     width: 100%;
     height: 60px;
     top: 0;
-    z-index: 20;
+    z-index: 100;
 }
 
 .header__wrap {
@@ -83,8 +83,8 @@ a {
 }
 
 .header__links__social__link {
-    width: 17px;
-    height: 17px;
+    width: 21px;
+    height: 21px;
     margin-left: 10px;
 }
 
@@ -280,8 +280,8 @@ footer {
 }
 
 .footer__social__link {
-    width: 20px;
-    height: 20px;
+    width: 23px;
+    height: 23px;
     display: inline-block;
 }
 
@@ -410,6 +410,17 @@ body.--catering .menu__list.--catering {
     &.pie-8 { background-image: url('../img/pie_8.jpg'); }
     &.pie-9 { background-image: url('../img/pie_9.jpg'); }
     &.pie-10 { background-image: url('../img/pie_10.jpg'); }
+
+    &.catering_1 { background-image: url('../img/catering_1.jpg'); }
+    &.catering_2 { background-image: url('../img/catering_2.jpg'); }
+    &.catering_3 { background-image: url('../img/catering_3.jpg'); }
+    &.catering_4 { background-image: url('../img/catering_4.jpg'); }
+    &.catering_5 { background-image: url('../img/catering_5.jpg'); }
+    &.catering_6 { background-image: url('../img/catering_6.jpg'); }
+    &.catering_7 { background-image: url('../img/catering_7.jpg'); }
+    &.catering_8 { background-image: url('../img/catering_8.jpg'); }
+    &.catering_9 { background-image: url('../img/catering_9.jpg'); }
+    &.catering_10 { background-image: url('../img/catering_10.jpg'); }
 
     &.puff_1 { background-image: url('../img/puff_1.jpg'); }
 }
